@@ -1,0 +1,19 @@
+{
+  "name": "sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "node": "^17.7.2",
+    "sass": "^1.51.0"
+  },
+  "devDependencies": {
+    "gulp-sass": "^5.1.0"
+  }
+}

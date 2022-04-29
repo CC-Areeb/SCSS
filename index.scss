@@ -1,0 +1,208 @@
+// google font imports
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Radio+Canada:wght@300;400;500;600;700&display=swap');
+
+
+// resetting styles
+
+*
+{
+    color: inherit;
+    margin:0
+}
+
+
+body
+{
+    font-family: Lato;
+}
+
+ul
+{
+    padding: 0;
+    list-style-type: none;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+hr
+{
+    border: 0;
+    border-top: 1px dotted #efefef;
+}
+
+img
+{
+    max-width: 100%;
+}
+
+
+// sass feature, it a nesting rule
+h1
+{
+    a
+    {
+        color: red;
+    }
+}
+
+// variables to define css features
+
+
+// blue theme colors
+$blue-1: #e6e6ff;
+$blue-2: #ccccff;
+$blue-3: #b3b3ff;
+$blue-4: #8080ff;
+$blue-5: #6666ff;
+$blue-6: #4d4dff;
+$blue-7:#3333ff;
+$blue-8:#1a1aff;
+$blue-9:#0000ff;
+$blue-10:#0000e6;
+$blue-11:#0000cc;
+$blue-12:#0000b3;
+$blue-13:#000099;
+$blue-14: #000080;
+$blue-15: #000066;
+$blue-16: #00004d;
+$blue-17: #000033;
+
+
+// red theme colors
+$red-1: #ffe6e6;
+$red-2: #ffcccc;
+$red-3: #ffb3b3;
+$red-4: #ff9999;
+$red-5: #ff8080;
+$red-6: #ff6666;
+$red-7:#ff4d4d;
+$red-8:#ff3333;
+$red-9:#ff1a1a;
+$red-10:#ff0000;
+$red-11:#e60000;
+$red-12:#cc0000;
+$red-13:#b30000;
+$red-14: #990000;
+$red-15: #800000;
+$red-16: #660000;
+$red-17: #4d0000;
+
+
+// yellow theme colors
+$yellow-1: #ffffe6;
+$yellow-2: #ffffcc;
+$yellow-3: #ffffb3;
+$yellow-4: #ffff99;
+$yellow-5: #ffff80;
+$yellow-6: #ffff66;
+$yellow-7:#ffff4d;
+$yellow-8:#ffff33;
+$yellow-9:#ffff1a;
+$yellow-10:#ffff00;
+$yellow-11:#e6e600;
+$yellow-12:#cccc00;
+$yellow-13:#b3b300;
+$yellow-14: #999900;
+$yellow-15: #808000;
+$yellow-16: #666600;
+$yellow-17: #4d4d00;
+
+
+// green theme colors
+$green-1: #e6ffe6;
+$green-2: #ccffcc;
+$green-3: #b3ffb3;
+$green-4: #99ff99;
+$green-5: #80ff80;
+$green-6: #66ff66;
+$green-7:#4dff4d;
+$green-8:#33ff33;
+$green-9:#1aff1a;
+$green-10:#00ff00;
+$green-11:#00e600;
+$green-12:#00cc00;
+$green-13:#00b300;
+$green-14: #009900;
+$green-15: #008000;
+$green-16: #006600;
+$green-17: #004d00;
+
+
+
+// orange theme colors
+$orange-1: #fff6e6;
+$orange-2: #ffedcc;
+$orange-3: #ffe4b3;
+$orange-4: #ffdb99;
+$orange-5: #ffd280;
+$orange-6: #ffc966;
+$orange-7:#ffc14d;
+$orange-8:#ffb833;
+$orange-9:#ffaf1a;
+$orange-10:#ffa500;
+$orange-11:#e69500;
+$orange-12:#cc8500;
+$orange-13:#b37400;
+$orange-14: #996300;
+$orange-15: #805300;
+$orange-16: #664200;
+$orange-17: #4d3200;
+
+
+
+// teal color themes
+$teal-1: #e6ffff;
+$teal-2: #ccffff;
+$teal-3: #b3ffff;
+$teal-4: #99ffff;
+$teal-5: #80ffff;
+$teal-6: #66ffff;
+$teal-7:#4dffff;
+$teal-8:#33ffff;
+$teal-9:#1affff;
+$teal-10:#00ffff;
+$teal-11:#00e6e6;
+$teal-12:#00cccc;
+$teal-13:#00b3b3;
+$teal-14: #009999;
+$teal-15: #008080;
+$teal-16: #006666;
+$teal-17: #004d4d;
+
+
+
+h1
+{
+    color: $teal-15;
+}
+
+a
+{
+    color: $red-6;
+}
+
+
+button
+{
+    color: white;
+    border: 0;
+    background: $green-13;
+}
+
+.error
+{
+    color: $red-10;
+    border-color: $red-10;
+    border-style: solid;
+}
+
+.notification
+{
+    color: $green-13;
+    border-color: $green-13;
+    border-style: solid;
+}
