@@ -1,0 +1,30 @@
+gulp is the task runner which is going to run our compilation tasks
+gulp-sass is the plug-in for gulp to compile our sass
+sass package is used by the plug-in 
+--save-dev flag means that these packages will be stored in the json file as dev dependancies 
+a gulp js file for gulp to run and for compiling sass to css
+
+name has to be like gulpfile.js cuz it works like this .... 😅
+
+
+
+src, dest, watch, series are the packages we will import for gulp
+
+
+                            ************************* BIG NOTE *************************
+
+always define your sass coding first and then define your normal css when you want to use the sass components 
+
+
+
+Use partials for different sass coding as saving all in 1 file will make is too hard to read and messy
+example: @import 'variables'; 
+this is how we can import other sass files into our main sass file
+
+
+
+using underscore (_) before naming the scss file will make sure that the it will not
+compile in a css file as we are only using variables.scss to keep our code 
+clean and readable.
+
+This is how we define partials in a nutshell

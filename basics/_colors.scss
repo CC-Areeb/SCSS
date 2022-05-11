@@ -1,0 +1,68 @@
+// looping colors
+@each $key, $value in $colors {
+    .text-#{$key}
+    {
+        color: $value
+    }
+
+    .bg-#{$key}
+    {
+        background-color: $value;
+    }
+
+    .text-hover-#{$key}{
+        &:hover{
+            color: $value;
+        }
+    }
+
+
+    // using for loop to give different shades of colors
+
+    // using for loop for checking if color is white or black then no shades are needed
+
+    @if ($value != black and $value != white){
+        // light variations
+    @for $color from 1 through 9 {
+        .text-#{$key}-light-#{$color}
+        {
+            color: mix(white, $value, $color * 10);
+        }
+
+        .text-hover-#{$key}-light-#{$color}{
+            &:hover{
+                color: mix(white, $value, $color * 10);
+            }
+        }
+
+        .bg-#{$key}-light-#{$color}
+        {
+            background-color: mix(white, $value, $color * 10);
+        }
+    }
+
+
+
+    // dark variations
+    @for $color from 1 through 9 {
+        .text-#{$key}-dark-#{$color}
+        {
+            color: mix(black, $value, $color * 10);
+        }
+
+
+        .text-hover-#{$key}-dark-#{$color}{
+            &:hover{
+                color: mix(black, $value, $color * 10);
+            }
+        }
+
+        .bg-#{$key}-dark-#{$color}
+        {
+            background-color: mix(black, $value, $color * 10);
+        }
+    }
+    }
+    
+
+}

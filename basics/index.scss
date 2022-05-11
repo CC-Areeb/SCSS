@@ -1,0 +1,36 @@
+// google font imports
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Radio+Canada:wght@300;400;500;600;700&display=swap');
+
+
+
+/*
+to use the variables just import them here
+
+order of imports matter the most
+*/
+
+// first comes resets
+@import 'resets';
+
+
+// next comes variables and functions (this includes my color ranges)
+@import 'variables'; 
+
+
+
+// then comes the colors which are linked with variables as I haved defined colors as variables
+@import 'colors';
+@import 'size';
+
+
+
+// components like cards, navabr, buttons, etc...
+@import 'components/cards';
+@import 'components/anchor';
+@import 'components/button';
+
+
+
+
+// utilities like margin, padding, border, border radius, etc...
