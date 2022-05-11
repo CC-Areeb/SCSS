@@ -3083,38 +3083,6 @@ a {
   text-decoration: none;
 }
 
-/*
-for small variations we would be duplicating code if not using 
-mixins so better use mixins
-
-We use mixins so that common properties can be written down
-once in the mixin directive and we only need to write down
-if we have variations like underlines or boldness 
-
-
-we can also define a variable inside the mixin and use that
-as a parameter and use it in different variations and have
-different outcomes
-
-
-
-example:
-@mixin button ($some_variable){
-    css rule 1
-    css rule 2
-    css rule 3
-    ...
-
-    background-color / color / any rule: $some_variable
-}
-
-then where ever we have called in the mixin, we can pass the variables
-as the parameter and it will be taken by the mixin
-
-.button-dollar_sign key{
-    @include mixin($value); -----> value becauce we are using the "value" keyword for generating color shades
-}
-*/
 .btn-cyan {
   text-decoration: none;
   cursor: pointer;
