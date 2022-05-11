@@ -1,0 +1,31 @@
+Headings:
+
+We have basic h1 to h6 headings in the web
+now with SASS/SCSS, there are display headings,
+these are similar to bootstrap display headings
+with name but different in font sizes
+
+
+
+
+Font size:
+Added 4 basic font sizes
+
+1) Extra small
+2) Small
+3) Large
+4) Extra large
+
+
+
+Cards:
+under progress ...
+
+
+
+Color palet:
+Added few basic colors with some basic shades 
+example of text color ----> <span class="text-cyan">text is cyan</span>
+
+this includes text colors and background colors
+example of background color -----> <span class="bg-cyan text-white">bg is cyan</span>
