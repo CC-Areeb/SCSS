@@ -1,9 +1,18 @@
 Headings:
 
-We have basic h1 to h6 headings in the web
+We have basic h1 to h6 headings in the web but
 now with SASS/SCSS, there are display headings,
 these are similar to bootstrap display headings
 with name but different in font sizes
+(more display headings can be added if needed)
+
+examples of display headings from 1 to 5:
+        <p class="display-1">Display 1</p> <br>
+        <p class="display-2">Display 2</p> <br>
+        <p class="display-3">Display 3</p> <br>
+        <p class="display-4">Display 4</p> <br>
+        <p class="display-5">Display 5</p> <br>
+
 
 
 
@@ -11,15 +20,17 @@ with name but different in font sizes
 Font size:
 Added 4 basic font sizes
 
-1) Extra small
-2) Small
-3) Large
-4) Extra large
+1) Extra small   example ------> <span class="font-sm-2">Small</span> 
+2) Small         example ------> <span class="font-sm-2">Extra small</span> 
+3) Large         example ------> <span class="font-lg-1">Large</span> 
+4) Extra large   example ------> <span class="font-lg-2">Extra large</span> 
 
 
 
-Cards:
+Card:
 under progress ...
+this includes things like box shadows and possibly
+different margin and paddings
 
 
 
@@ -29,3 +40,12 @@ example of text color ----> <span class="text-cyan">text is cyan</span>
 
 this includes text colors and background colors
 example of background color -----> <span class="bg-cyan text-white">bg is cyan</span>
+
+
+
+Hover:
+A small hover unitiliy class where if you hover
+a link, it will change its color let's say from
+light red to light blue
+
+example:    <a href="#" class="text-blue-light-6 text-hover-red-light-7">Hover over me!</a>
