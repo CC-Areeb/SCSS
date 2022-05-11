@@ -65,3 +65,6 @@ as the parameter and it will be taken by the mixin
     @include mixin($value); -----> value becauce we are using the "value" keyword for generating color shades
 }
 */
+
+
+& is used to access the properties like &:hover{ ... } 

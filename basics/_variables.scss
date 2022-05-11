@@ -7,13 +7,10 @@ $base-padding: 1rem;
 $base-margin: 1rem;
 
 
-// error and notification
-// $error: red;
-// $notice: green;
 
 // borders
 $base-border-thickness: 1px;
-$base-border-radius: 1px;
+$base-border-radius: 20px;
 
 
 
@@ -68,6 +65,17 @@ $display-5: $base-font-size * 2;
 
 
 
+// error and notice
+.error
+{
+    color: #ff0000;
+}
+
+.notify
+{
+    color: #008000;
+}
+
 
 // width and height
     // $base-width: 1600px;
@@ -94,6 +102,8 @@ $colors:(
     "grey": #808080,
     "black": black,
     "white": white,
+    "error": #ff4d4d,
+    "notify": #00b300,
 );
 
 // .test

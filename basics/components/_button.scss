@@ -1,40 +1,5 @@
-/*
-for small variations we would be duplicating code if not using 
-mixins so better use mixins
-
-We use mixins so that common properties can be written down
-once in the mixin directive and we only need to write down
-if we have variations like underlines or boldness 
-
-
-we can also define a variable inside the mixin and use that
-as a parameter and use it in different variations and have
-different outcomes
-
-
-
-example:
-@mixin button ($some_variable){
-    css rule 1
-    css rule 2
-    css rule 3
-    ...
-
-    background-color / color / any rule: $some_variable
-}
-
-then where ever we have called in the mixin, we can pass the variables
-as the parameter and it will be taken by the mixin
-
-.button-#{dollar_sign key}{
-    @include mixin($value); -----> value becauce we are using the "value" keyword for generating color shades
-}
-*/
-
-
-
 // making a mixin
-@mixin btn ($some-color){
+@mixin btn ($some-color: whitesmoke){
     text-decoration: none;
     cursor: pointer;
     display: inline-block;
@@ -44,22 +9,43 @@ as the parameter and it will be taken by the mixin
     background-color: $some-color;
 }
 
+// generic button
+.btn
+{
+    @include btn;
+}
 
 @each $key,$value in $colors
 {
-
     // basic button
     .btn-#{$key}
     {
         @include btn($value); // this is how we call a mixin 
+        &:hover{
+            background-color: lighten($value, 5)
+        }
     }
 
 
     // outlined button
-    .btn-#{$key}
+    .btn-outlined-#{$key}
     {
         @include btn(white);
         border: $base-border-thickness solid $value;
+        &:hover{
+            background-color: $value;
+        }
+    }
+
+
+    .btn-complement-#{$key}
+    {
+        @include btn($value);
+        color: light-comp($value);
+        &:hover{
+            color: $value;
+            background-color: light-comp($value);
+        }
     }
 
 }

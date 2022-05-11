@@ -49,3 +49,42 @@ a link, it will change its color let's say from
 light red to light blue
 
 example:    <a href="#" class="text-blue-light-6 text-hover-red-light-7">Hover over me!</a>
+
+
+
+
+Buttons:
+3 types of buttons:
+(Note that when using anchor, the size is a bit bigger than the button tag)
+
+1---> Generic with a default color
+example: <a href="#" class="btn">default button</a>
+
+
+
+2---> Basic button with colors and change of shade when hovered
+example: <a href="#" class="btn-cyan text-white">click me!</a>
+
+
+
+3---> Outlined button with colors and change of shade when hovered
+example: <a href="#" class="btn-outlined-cyan">click me!</a>
+
+
+
+button tags vs anchor tags
+ button tag size is a bit small than the anchor tag size
+ try to use both and see what fits your needs 😇
+
+ example of a anchor tag: <a href="#" class="btn-error text-white">click me!</a>
+
+ example of a button tag: <button class="btn-outlined-teal">I am a button, click me!</button>
+
+
+
+
+
+NOTE:
+error and notify are just a varient of basic red and green colors respectivly
+these are so that you can use error to alert users that something is incorrect
+and the notify means that the users can get a notification of something
