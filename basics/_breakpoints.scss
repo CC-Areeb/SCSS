@@ -5,3 +5,11 @@ $breakpoints: (
     "lg": 960px,
     "xl": 1200px,
 );
+
+// making a mixin
+@mixin xs {
+    @media (min-width: map-get($breakpoints, "xs"))
+    {
+        @content;
+    }
+}
