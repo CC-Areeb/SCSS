@@ -20,7 +20,7 @@ $base-box-shadow: 1px 3px 5px rgba(0,0,0,1);
 
 
 // basic font size
-$base-font-size: 1rem;
+$base-font-size: 1rem; // 1 rem = 16px
 
 // using the base font size and the using maths to change sizes as we want
 $font-size-sm-1: $base-font-size * 0.75;
@@ -77,12 +77,6 @@ $display-5: $base-font-size * 2;
 }
 
 
-// width and height
-    // $base-width: 1600px;
-    // $base-height: 1600px;
-
-
-
 // map, this uses key and value pair
 // using a map we will define some more colors
 $colors:(
@@ -105,55 +99,3 @@ $colors:(
     "error": #ff4d4d,
     "notify": #00b300,
 );
-
-// .test
-// {
-//     width: calc($base-width / 80);
-// }
-
-// new map for height and width 1600
-// $size:
-// (
-//     //some possible widths
-//     "w-1": calc($base-width / 800),
-//     "w-2": calc($base-width / 400), 
-//     "w-3": calc($base-width / 320), 
-//     "w-4": calc($base-width / 200), 
-//     "w-5": calc($base-width / 160), 
-//     "w-6": calc($base-width / 100),
-//     "w-7": calc($base-width / 64),
-//     "w-8": calc($base-width / 50),
-//     "w-9": calc($base-width / 40),
-//     "w-10": calc($base-width / 32),
-//     "w-11": calc($base-width / 25),
-//     "w-12": calc($base-width / 20),
-//     "w-13": calc($base-width / 16),
-//     "w-14": calc($base-width / 10),
-//     "w-15": calc($base-width / 8),
-//     "w-16": calc($base-width / 5),
-//     "w-17": calc($base-width / 4),
-//     "w-18": calc($base-width / 2),
-
-
-//     // some possible heights
-//     "h-1": calc($base-height / 800),
-//     "h-2": calc($base-height / 400),
-//     "h-3": calc($base-height / 320),
-//     "h-4": calc($base-height / 200),
-//     "h-5": calc($base-height / 160),
-//     "h-6": calc($base-height / 100),
-//     "h-7": calc($base-height / 64),
-//     "h-8": calc($base-height / 50),
-//     "h-9": calc($base-height / 40),
-//     "h-10": calc($base-height / 32),
-//     "h-11": calc($base-height / 25),
-//     "h-12": calc($base-height / 20),
-//     "h-13": calc($base-height / 16),
-//     "h-14": calc($base-height / 10),
-//     "h-15": calc($base-height / 8),
-//     "h-16": calc($base-height / 5),
-//     "h-17": calc($base-height / 4),
-//     "h-18": calc($base-height / 2),
-// );
-
-

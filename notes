@@ -68,3 +68,94 @@ as the parameter and it will be taken by the mixin
 
 
 & is used to access the properties like &:hover{ ... } 
+
+
+/*
+the key name and css property name must be same
+
+example:
+the property name is padding and the map is the values inside it
+we have nested the maps here like we have 1 utilities map which
+contains the other small maps for different paddig strengths
+
+so that's why we have 4 mini-maps inside 1 big map
+*/
+
+
+Utilities in scss:
+
+Step 1:
+Make a file for utilities and import is in the main scss file
+
+
+Step 2:
+make a very big map of multiple utilities
+this means that many maps inside a map
+
+
+Step 3:
+use the math library for sass (@use 'sass:math';)
+
+
+Step 4:
+Make a utilities map 
+$utilities: (
+    a utility set for padding ------------> ("padding": (),)
+    a utility set for padding left -------> ("padding-left": (),)
+    a utility set for padding right
+    a utility set for padding up
+
+
+    a utility set for margin ------------> ("margin": (),)
+    a utility set for margin left -------> ("margin-left": (),)
+    a utility set for margin right
+    a utility set for margin up
+);
+
+
+Step 5:
+make a prefix for padding (p) with the keyword "prefix"
+
+
+Step 6:
+make new property called value which will define all the values
+this values properties will also be a map itself
+"values:(
+    "0 ": $base-padding,
+    "1": $base-padding,
+    you can add more values 
+),"
+same will be done for all directions of padding and margin
+
+Note:
+Names of these utilites is important as they will match with the 
+actual CSS property
+
+
+Step 7:
+generate a sass code to cycle through all the values and make
+classes for all of them
+
+code:
+@each $property,$map in $utilities {    
+    $prefix: map-get($map, "prefix");
+    $values: map-get($map, "values");
+
+    @each $key, $val in $values {
+        @if ($key == "default"){
+            .#{$prefix}{
+                #{$property}: $val;
+            }
+        }
+
+        @else{
+            .#{$prefix}-#{$key}{
+                #{$property}: $val;
+            }
+        }
+    }
+}
+
+defining the key and value pair where the key is property name and value is the map
+and utilities is the big map. Next we are getting a prefix for each properties 
+through the map-get function and just like that are getting the values
