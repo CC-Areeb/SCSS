@@ -159,3 +159,38 @@ code:
 defining the key and value pair where the key is property name and value is the map
 and utilities is the big map. Next we are getting a prefix for each properties 
 through the map-get function and just like that are getting the values
+
+
+
+Breakpoints:
+
+/*
+make a map for different breakpoints like extra small, small, meduim, large, extra large 
+the starting will be at width 0 and goes all the way to 480px in which the small breakpoint 
+comes in and when the width reaches to 720px the medium breakpoint will start and so on and
+so forth
+*/
+
+$breakpoints: (
+    "xs": 0,
+    "sm": 480px,
+    "md": 720px,
+    "lg": 960px,
+    "xl": 1200px,
+);
+
+/** 
+Now we make a mixin for all the breakpoints in which the minimum width will be the 
+breakpoint of xs or extra-small
+
+the content is used so that the breakpoints can have multiple values depending on
+use case
+*/
+
+// making a mixin without arguments
+@mixin xs {
+    @media (min-width: map-get($breakpoints, "xs"))
+    {
+        @content;
+    }
+}

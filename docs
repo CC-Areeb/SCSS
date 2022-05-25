@@ -88,3 +88,44 @@ NOTE:
 error and notify are just a varient of basic red and green colors respectivly
 these are so that you can use error to alert users that something is incorrect
 and the notify means that the users can get a notification of something
+
+
+
+Media Querries:
+The use of media queries is so that we can apply styles differently whenever
+the breakpoint changes 
+
+the bwlow is a small test to see if colors change at different breakpoints:
+<p class="responsive-test font-lg-2">
+        This is a test to see color changing at different break points
+</p>
+
+note: the test class is called responsive-test and this is how it looks:
+
+.responsive-test
+{
+    @include xs
+    {
+        color: red;
+    }
+
+    @include sm
+    {
+        color: orange;
+    }
+
+    @include md
+    {
+        color: purple;
+    }
+
+    @include lg
+    {
+        color: blue;
+    }
+
+    @include xl
+    {
+        color: darkcyan;
+    }
+}
