@@ -194,3 +194,18 @@ use case
         @content;
     }
 }
+
+
+
+GRID SYSTEM:
+firstly define some basic container styles and row styles as all the columns go inside the row
+and the whole system has its own container for it. Then we added column classes and cycled
+through them using the for loop where it will start from 1 and loop through till the number of 
+columns we want, in this case we went for 12. we can use multiple grid classes inside the sigle
+div class and the grid will work.
+
+
+GAP:
+there are gaps between each column item and we did that by using the each loop in which we 
+cycled through the keys and values of the gap map, these gaps will be added to any direct 
+child element as long as they have the grid classes.

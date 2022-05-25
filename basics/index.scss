@@ -17,7 +17,8 @@ order of imports matter the most
 // next comes variables and functions (this includes my color ranges)
 @import 'functions';
 @import 'variables'; 
-
+@import 'breakpoints';
+@import 'grid';
 
 
 // then comes the colors which are linked with variables as I haved defined colors as variables
@@ -30,7 +31,7 @@ order of imports matter the most
 @import 'components/cards';
 @import 'components/anchor';
 @import 'components/button';
-@import 'breakpoints';
+
 
 
 

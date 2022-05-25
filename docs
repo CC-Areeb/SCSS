@@ -100,32 +100,84 @@ the bwlow is a small test to see if colors change at different breakpoints:
         This is a test to see color changing at different break points
 </p>
 
-note: the test class is called responsive-test and this is how it looks:
+note: the test class is called responsive-test and this is how it looks
 
 .responsive-test
 {
-    @include xs
+    @include xs -----------------> extra small
     {
         color: red;
     }
 
-    @include sm
+    @include sm -----------------> small
     {
         color: orange;
     }
 
-    @include md
+    @include md -----------------> meduim
     {
         color: purple;
     }
 
-    @include lg
+    @include lg -----------------> large
     {
         color: blue;
     }
 
-    @include xl
+    @include xl -----------------> extra large
     {
         color: darkcyan;
     }
 }
+
+CONTAINER:
+The container is used as a means to centeralize the contents in the center
+in your code you will use it like this:
+<div class="container">
+    // your html
+</div>
+
+
+
+GRID SYSTEM:
+With the grid system, we can now make responsive designs for different screen
+widths or breakpoints by adding class like ("col-1-xs") after your containers
+this is done for all the breakpoints. You need to be careful when you use this 
+as all the column must be inside the row classes as the .row class has the flex
+display class used to set all the columns
+
+this is how to use with a card inside it and you can use more than 1 breakpoints
+in just 1 container:
+
+<div class="col-12-xs col-5-sm col-3-xl">
+    <div class="card">
+        <h3 class="card-title">Hey fellow devs!</h3>
+        <p class="card-body">
+            This is an example of a grid system, cool isn't it!! 😃
+        </p>
+    </div>
+</div>
+
+GAPS:
+We have made a small gap system so that elements can have a gap between them
+
+this us how to use them:
+<div class="row gap-2">
+    // your html
+</div>
+
+
+
+FLEX:
+We have made a flex item system where devs can use the classes and have thier
+content justify at where they want
+
+useage:
+<div class="justify-center">
+    // your html
+</div>
+
+other classes include:
+flex-start, flex-end, center, space-between, space-around
+
+just replace center with these and it will apply the property
