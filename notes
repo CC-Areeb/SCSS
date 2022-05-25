@@ -209,3 +209,23 @@ GAP:
 there are gaps between each column item and we did that by using the each loop in which we 
 cycled through the keys and values of the gap map, these gaps will be added to any direct 
 child element as long as they have the grid classes.
+
+
+
+EXTEND:
+With the @extend directive we can reuse other style classes inside another class and it helps us
+by writing the code only once and reusing it where ever we want
+
+a mixin uses arguments whereas the extend doesn't and you only have to type the class or id name 
+after the @extend keyword
+
+sample:
+
+@extend .myClass
+
+however every time you compile your output css, this class will be added eventhough we have only
+made it for a small use and don't need it as a class so we can replace the dot with % sign
+
+@extend %myClass
+
+this will make this a placholder class and will not be used in the output css

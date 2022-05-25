@@ -4734,6 +4734,89 @@ a {
   background-color: #ff1aff;
 }
 
+.navbar .container, .navbar-notify .container, .navbar-error .container, .navbar-white .container, .navbar-black .container, .navbar-grey .container, .navbar-gray .container, .navbar-brown .container, .navbar-magenta .container, .navbar-pink .container, .navbar-teal .container, .navbar-yellow .container, .navbar-orange .container, .navbar-purple .container, .navbar-green .container, .navbar-blue .container, .navbar-red .container, .navbar-cyan .container, .navbar, .navbar-notify, .navbar-error, .navbar-white, .navbar-black, .navbar-grey, .navbar-gray, .navbar-brown, .navbar-magenta, .navbar-pink, .navbar-teal, .navbar-yellow, .navbar-orange, .navbar-purple, .navbar-green, .navbar-blue, .navbar-red, .navbar-cyan {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.navbar, .navbar-notify, .navbar-error, .navbar-white, .navbar-black, .navbar-grey, .navbar-gray, .navbar-brown, .navbar-magenta, .navbar-pink, .navbar-teal, .navbar-yellow, .navbar-orange, .navbar-purple, .navbar-green, .navbar-blue, .navbar-red, .navbar-cyan {
+  padding: 1rem 2rem;
+  box-shadow: 1px 3px 5px rgb(0, 0, 0);
+}
+.navbar .site-title, .navbar-notify .site-title, .navbar-error .site-title, .navbar-white .site-title, .navbar-black .site-title, .navbar-grey .site-title, .navbar-gray .site-title, .navbar-brown .site-title, .navbar-magenta .site-title, .navbar-pink .site-title, .navbar-teal .site-title, .navbar-yellow .site-title, .navbar-orange .site-title, .navbar-purple .site-title, .navbar-green .site-title, .navbar-blue .site-title, .navbar-red .site-title, .navbar-cyan .site-title {
+  font-size: 1.25rem;
+}
+.navbar-cyan {
+  background-color: #009999;
+}
+
+.navbar-red {
+  background-color: #ff0000;
+}
+
+.navbar-blue {
+  background-color: #0000ff;
+}
+
+.navbar-green {
+  background-color: #008000;
+}
+
+.navbar-purple {
+  background-color: #800080;
+}
+
+.navbar-orange {
+  background-color: #ffa500;
+}
+
+.navbar-yellow {
+  background-color: #ffff00;
+}
+
+.navbar-teal {
+  background-color: #008080;
+}
+
+.navbar-pink {
+  background-color: #ffc0cb;
+}
+
+.navbar-magenta {
+  background-color: #ff00ff;
+}
+
+.navbar-brown {
+  background-color: #a52a2a;
+}
+
+.navbar-gray {
+  background-color: #808080;
+}
+
+.navbar-grey {
+  background-color: #808080;
+}
+
+.navbar-black {
+  background-color: black;
+}
+
+.navbar-white {
+  background-color: white;
+}
+
+.navbar-error {
+  background-color: #ff4d4d;
+}
+
+.navbar-notify {
+  background-color: #00b300;
+}
+
 .p-0 {
   padding: 0;
 }
