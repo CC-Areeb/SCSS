@@ -3,39 +3,39 @@
 // all varaibels are stored here 
 
 // margin and padding
-$base-padding: 1rem;
-$base-margin: 1rem;
+$base-padding: 1rem !default;
+$base-margin: 1rem !default;
 
 
 
 // borders
-$base-border-thickness: 1px;
-$base-border-radius: 20px;
+$base-border-thickness: 1px !default;
+$base-border-radius: 20px !default;
 
 
 
 // box shadow
-$base-box-shadow: 1px 3px 5px rgba(0,0,0,1);
+$base-box-shadow: 1px 3px 5px rgba(0,0,0,1) !default;
 
 
 
 // basic font size
-$base-font-size: 1rem; // 1 rem = 16px
+$base-font-size: 1rem !default; // 1 rem = 16px
 
 // using the base font size and the using maths to change sizes as we want
-$font-size-sm-1: $base-font-size * 0.75;
-$font-size-sm-2: $base-font-size * 0.50;
+$font-size-sm-1: $base-font-size * 0.75 !default;
+$font-size-sm-2: $base-font-size * 0.50 !default;
 
-$font-size-lg-1: $base-font-size * 1.25;
-$font-size-lg-2: $base-font-size * 1.50;
+$font-size-lg-1: $base-font-size * 1.25 !default;
+$font-size-lg-2: $base-font-size * 1.50 !default;
 
 
 // display headings
-$display-1: $base-font-size * 6;
-$display-2: $base-font-size * 5;
-$display-3: $base-font-size * 4;
-$display-4: $base-font-size * 3;
-$display-5: $base-font-size * 2;
+$display-1: $base-font-size * 6 !default;
+$display-2: $base-font-size * 5 !default;
+$display-3: $base-font-size * 4 !default;
+$display-4: $base-font-size * 3 !default;
+$display-5: $base-font-size * 2 !default;
 
 
 
@@ -66,7 +66,7 @@ $display-5: $base-font-size * 2;
 
 
 // error and notice
-.error
+.error 
 {
     color: #ff0000;
 }
@@ -79,7 +79,7 @@ $display-5: $base-font-size * 2;
 
 // map, this uses key and value pair
 // using a map we will define some more colors
-$colors:(
+$colors :(
 
     "cyan": #009999,
     "red": #ff0000,
@@ -98,4 +98,4 @@ $colors:(
     "white": white,
     "error": #ff4d4d,
     "notify": #00b300,
-);
+) !default;
